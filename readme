@@ -1,0 +1,11 @@
+改了两个地方
+1. setting里面的mysql HOST配置
+2. /etc/nginx/conf.d/online_nginx.conf 里面的server_name
+
+启动nginx和uwsgi后
+/etc/init.d/nginx restart
+uwsgi --socket :8000 --module imooc.wsgi
+
+现在可以通过 http://52.193.67.154 访问
+
+你可以再删了自己试试
